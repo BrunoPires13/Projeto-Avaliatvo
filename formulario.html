@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="estilo.css">
-	<title> Trabalho Escolar </title>
-	<link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <meta charset="utf-8">
+    <title> Trabalho Escolar </title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <script src="controller.js"></script>
 </head>
-<body style="background-color:rgb(250, 223, 133)">
-	<i> <h1> Formulary - <a href="index.html">Home Page</a> </h1>
-	<hr>
-	<form>
-		<p> Nome </p>
-		<input type="text" name="nome">
-		<br>
-		<p> Email </p>
-		<input type="Email" name="email" placeholder="email@email.com">
-		<br>
-		<p> Telefone </p>
-		<input type="Telefone" name="telefone" placeholder="(43) 9 9980-3456">
-		<br>
-		<p> CPF </p>
-		<input type="CPF" name="cpf" placeholder="000.000.000-00">
-		<br>
-		<p> Assunto </p>
-		<input type="Assunto" name="assunto">
-		<br>
-		<p> Detalhes </p>
-		<input type="Detalhes" name="detalhes">
-		<p> </p>
-		<button> Enviar </button>
-		<br> </i>
-	</form>
+
+<body>
+
+    <i>
+    <h1> Formulário - <a href="index.html">Início</a> </h1>
+
+    <form method="post">
+        <p> E-mail: </p> 
+        <input type="email" id="email" name="email" placeholder="Informe seu email...">
+        <br>
+        <br>
+        <h3> Dados Pessoais </h3>
+        <p> CPF: <input type="cpf" id="cpf" name="cpf" placeholder="Informe seu cpf..."> </p>
+        <p> Nome Completo: <input type="text" id="name" name="name" placeholder="Informe seu nome..."> </p>
+        <p> Data de Nascimento: <input type="date" id="dn" name="dn"> </p>
+        <p> Celular: <input type="cellphone" id="cellphone" name="cellphone" placeholder="Informe seu celular..."> </p>
+        <p> Senha: <input type="password" id="password" name="password" placeholder="Informe sua senha..."> </p><br><br>
+        <h3> Dados Residênciais </h3>
+        <p> CEP: <input type="cep" id="cep" name="cep" placeholder="Informe seu cep..."> </p>
+        <p> Número: <input type="number" id="number" name="number" placeholder="Informe seu número..."> </p>
+        <p> Complemento: <input type="complement" id="complement" name="complement" placeholder="Informe seu completo..."> </p>
+        </i>
+        <br>
+        <div class="checkbox mb-3">   
+          <p> <input type="checkbox" value="remember-me"> Li e aceito a Politica de privacidade. </p>
+          <br>
+          <h5>Seus dados pessoais serão respeitados de acordo com a nossa política de privacidade.</h5>
+          <br>
+          <button onclick="verificar()" name="cadastrar">Continuar</button>
+        </div>
+    </form>
 </body>
 </html>
